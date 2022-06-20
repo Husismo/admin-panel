@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="column__inner">
+  <div class="column">
+    <div id="mySidebar" class="sidebar">
+    <div class="sidebar__inner">
+      <h2 class="logo">SaaS Kit</h2>
+      <div class="siderbar__profile">
+        <img src="images/sidebar__profile-img.png" alt="" class="sidebar__profile-img">
+        <div class="sidebar__profile-text">
+          <p class="sidebar__person">Sierra Ferguson</p>
+          <p href="" class="sidebar__mail">s.ferguson@gmail.com</p>
+        </div>
+      </div>
+      <nav class="sidebar__nav">
+        <ul class="sidebar__list">
+          <li class="sidebar__item"> <a href="#" class="sidebar__link"> <img src="images/sidebar-1.svg" alt="" class="sidebar__link-img"> Dashboard</li></a>
+          <li class="sidebar__item"> <a href="#" class="sidebar__link"> <img src="images/sidebar-2.svg" alt="" class="sidebar__link-img"> Tasks</li></a>
+          <li class="sidebar__item"> <a href="#" class="sidebar__link"> <img src="images/sidebar-3.svg" alt="" class="sidebar__link-img"> Email</li></a>
+          <li class="sidebar__item"> <a href="#" class="sidebar__link"> <img src="images/sidebar-4.svg" alt="" class="sidebar__link-img"> Contacts</li></a>
+          <li class="sidebar__item"> <a href="#" class="sidebar__link"> <img src="images/sidebar-5.svg" alt="" class="sidebar__link-img"> Chat</li></a>
+          <li class="sidebar__item"> <a href="#" class="sidebar__link"> <img src="images/sidebar-6.svg" alt="" class="sidebar__link-img"> Deals</li></a>
+        </ul>
+      </nav>
+      <div class="sidebar__settings"> <a href="" class="sidebar__link">
+        <img src="images/sidebar-7.svg" alt="" class="sidebar__link-img">
+        Settings</a>
+      </div>
+      <div class="sidebar__btn-inner">
+        <button class="sidebar__btn" onclick="closeNav()" dblclick="openNav"><img class="sidebar__img" src="images/sidebar-btn.svg" alt="" >Toggle sidebar</button>
+      </div>
+    </div>
+    </div>
+  </div> 
+  <div class="column">  
+    <div class="search">
+    <form class="search__form" action="">
+      <button class="search__btn"><img src="images/search-btn.svg" alt=""></button>
+      <input class="search__input" type="text" placeholder="Global search">
+      <a href="#" class="notification__link"><img src="images/notification.svg" alt=""></a>
+    </form>
+    </div>
+    <div class="grid__wrapper">
+      <div class="tasks">
+        <div class="task__text">
+          <p class="task__counter">8 task completed out of 10</p>
+          <p class="task__shows">Show: <a href="#">This week <img src="images/arrow.svg" alt="" class="task__img"></a></p>
+        </div>
+        <div class="calendar">
+          <p class="today">23 December, Sunday</p>
+          <ul class="calendar__grid">
+            <li class="calendar__list">Sun <span>23</span> </li>
+            <li class="calendar__list">Mon <span>24</span> </li>
+            <li class="calendar__list">Tue <span>25</span> </li>
+            <li class="calendar__list">Wed <span>26</span> </li>
+            <li class="calendar__list">Thu <span>27</span> </li>
+            <li class="calendar__list">Fri <span>28</span> </li>
+            <li class="calendar__list">Sat <span>29</span> </li>
+          </ul>
+        </div>
+        <div class="task__block">
+          <div class="task__top">
+            <h3 class="task__title">Send benefit review by Sunday</h3>
+            <p class="task__block-text">Reminder</p>
+          </div>
+          <p class="task__date">Due date: <span>December 23, 2018</span></p>
+          <div class="task__profile-inner">
+            <div class="task__profile">
+              <img src="images/task-img-1.jpg" alt="" class="task__img">
+              <p class="task__name">George Fields</p>
+            </div>
+            <button class="completed__btn task__btn">Completed</button> 
+          </div>
+        </div>
+        <div class="task__block">
+          <div class="task__top">
+            <h3 class="task__title">Invite to office meet-up</h3>
+            <p class="task__block-text">Call</p>
+          </div>
+          <p class="task__date">Due date: <span>December 23, 2018</span></p>
+          <div class="task__profile-inner">
+            <div class="task__profile">
+              <img src="images/task-img-2.jpg" alt="" class="task__img">
+              <p class="task__name">Rebecca Moore</p>
+            </div> 
+            <button class="ended__btn task__btn">Ended</button> 
+          </div>
+        </div>
+        <div class="task__block">
+          <div class="task__top">
+            <h3 class="task__title">Office meet-up</h3>
+            <p class="task__block-text">Event</p>
+          </div>
+          <p class="task__date">Due date: <span>December 23, 2018</span></p>
+          <div class="task__profile-inner">
+            <div class="task__profile">
+              <img src="images/task-img-3.jpg" alt="" class="task__img">
+              <p class="task__name">Lindsey Stroud</p>
+            </div>
+            <button class="completed__btn task__btn">Completed</button> 
+          </div>
+        </div>
+      </div>
+      <div class="graphics">
+          <div class="block__text">
+            <h3 class="title__text">Deals</h3>
+            <p class="show__text">Show: <a href="#">Monthly <img src="images/arrow.svg" alt="" class="task__img"></a></p>
+          </div>
+          <p class="closed__deals"> <img src="images/closed-img.jpg" alt=""> Closed deals</p>
+      </div>
+      <div class="chart">
+        <div class="block__text">
+          <h3 class="title__text">Tasks</h3>
+          <p class="show__text">Show:  <a href="#">This month <img src="images/arrow.svg" alt="" class="task__img"></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
