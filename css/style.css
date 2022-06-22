@@ -38,13 +38,15 @@ a:active{
 .sidebar {
     height: 100%;
     width: 256px;
-    position: relative; 
+    position: sticky; 
     z-index: 1;
     top: 0;
     left: 0; 
     overflow-x: hidden;
     box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
     background-color: #fff;
+    transition: .3s;
+
 }
 .sidebar__inner {
     padding:17px 22px 24px;
@@ -174,7 +176,7 @@ a:active{
     border-radius: 4px;
     position: relative;
 }
-.graphics{
+.graphics__inner{
     background-color: #fff;
     grid-area: graphics;
     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
@@ -182,7 +184,7 @@ a:active{
     padding: 16px 24px;
     position: relative;
 }
-.chart{
+.chart__wrapper{
     background-color: #fff;
     grid-area: chart;
     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
@@ -374,5 +376,23 @@ a:active{
     width: 100%;
     top: 54px;
 }
+.sidebar.toggled {
+    width: 70px;
+}
+.sidebar.toggled span{
+    display: none;
+}
+.sidebar.toggled .sidebar__profile-text{
+    display: none;
+}
+.sidebar.toggled .sidebar__inner{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
 
 

@@ -17,7 +17,7 @@
   <div class="column">
     <div id="mySidebar" class="sidebar">
     <div class="sidebar__inner">
-      <h2 class="logo">SaaS Kit</h2>
+      <h2 class="logo">SaaS <span> Kit</span></h2>
       <div class="siderbar__profile">
         <img src="images/sidebar__profile-img.png" alt="" class="sidebar__profile-img">
         <div class="sidebar__profile-text">
@@ -27,20 +27,20 @@
       </div>
       <nav class="sidebar__nav">
         <ul class="sidebar__list">
-          <li class="sidebar__item"> <a href="#" class="sidebar__link"> <img src="images/sidebar-1.svg" alt="" class="sidebar__link-img"> Dashboard</li></a>
-          <li class="sidebar__item"> <a href="#" class="sidebar__link"> <img src="images/sidebar-2.svg" alt="" class="sidebar__link-img"> Tasks</li></a>
-          <li class="sidebar__item"> <a href="#" class="sidebar__link"> <img src="images/sidebar-3.svg" alt="" class="sidebar__link-img"> Email</li></a>
-          <li class="sidebar__item"> <a href="#" class="sidebar__link"> <img src="images/sidebar-4.svg" alt="" class="sidebar__link-img"> Contacts</li></a>
-          <li class="sidebar__item"> <a href="#" class="sidebar__link"> <img src="images/sidebar-5.svg" alt="" class="sidebar__link-img"> Chat</li></a>
-          <li class="sidebar__item"> <a href="#" class="sidebar__link"> <img src="images/sidebar-6.svg" alt="" class="sidebar__link-img"> Deals</li></a>
+          <li class="sidebar__item"> <a href="#" class="sidebar__link"> <img src="images/sidebar-1.svg" alt="" class="sidebar__link-img"> <span> Dashboard</span></li></a>
+          <li class="sidebar__item"> <a href="#" class="sidebar__link"> <img src="images/sidebar-2.svg" alt="" class="sidebar__link-img"> <span> Tasks</span></li></a>
+          <li class="sidebar__item"> <a href="#" class="sidebar__link"> <img src="images/sidebar-3.svg" alt="" class="sidebar__link-img"> <span> Email</span></li></a>
+          <li class="sidebar__item"> <a href="#" class="sidebar__link"> <img src="images/sidebar-4.svg" alt="" class="sidebar__link-img"> <span> Contacts</span></li></a>
+          <li class="sidebar__item"> <a href="#" class="sidebar__link"> <img src="images/sidebar-5.svg" alt="" class="sidebar__link-img"> <span> Chat</span></li></a>
+          <li class="sidebar__item"> <a href="#" class="sidebar__link"> <img src="images/sidebar-6.svg" alt="" class="sidebar__link-img"> <span> Deals</span></li></a>
         </ul>
       </nav>
       <div class="sidebar__settings"> <a href="" class="sidebar__link">
         <img src="images/sidebar-7.svg" alt="" class="sidebar__link-img">
-        Settings</a>
+        <span>Settings</span> </a>
       </div>
       <div class="sidebar__btn-inner">
-        <button class="sidebar__btn" onclick="closeNav()" dblclick="openNav"><img class="sidebar__img" src="images/sidebar-btn.svg" alt="" >Toggle sidebar</button>
+        <button class="sidebar__btn" onclick="closeNav()" dblclick="openNav"><img class="sidebar__img" src="images/sidebar-btn.svg" alt="" ><span> Toggle sidebar</span></button>
       </div>
     </div>
     </div>
@@ -114,22 +114,25 @@
           </div>
         </div>
       </div>
-      <div class="graphics">
+      <div class="graphics__inner">
           <div class="block__text">
             <h3 class="title__text">Deals</h3>
             <p class="show__text">Show: <a href="#">Monthly <img src="images/arrow.svg" alt="" class="task__img"></a></p>
           </div>
           <p class="closed__deals"> <img src="images/closed-img.jpg" alt=""> Closed deals</p>
+          <div class="chart" id="chart"></div>
       </div>
-      <div class="chart">
+      <div class="chart__wrapper">
         <div class="block__text">
           <h3 class="title__text">Tasks</h3>
           <p class="show__text">Show:  <a href="#">This month <img src="images/arrow.svg" alt="" class="task__img"></a></p>
         </div>
+        <div class="chart" id="chart__radiol-bar"></div>
       </div>
     </div>
   </div>
 </div>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
